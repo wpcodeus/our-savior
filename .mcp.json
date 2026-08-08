@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "novamira-visual-oursavior": {
+      "command": "npx",
+      "args": ["-y", "novamira-visual-mcp@latest"],
+      "env": {
+        "NOVAMIRA_VISUAL_WORKSPACE_URL": "https://oursavior.wpcodeus.dev/wp-admin/admin-post.php?action=novamira-visual"
+      }
+    }
+  }
+}
