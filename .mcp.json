@@ -6,6 +6,10 @@
       "env": {
         "NOVAMIRA_VISUAL_WORKSPACE_URL": "https://oursavior.wpcodeus.dev/wp-admin/admin-post.php?action=novamira-visual"
       }
+    },
+    "novamira-oursavior-wpcode": {
+      "type": "http",
+      "url": "https://oursavior.wpcodeus.dev/index.php?rest_route=/mcp/novamira-oauth"
     }
   }
 }
