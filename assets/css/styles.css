@@ -110,7 +110,7 @@ strong{color:var(--ink)}
 
 /* ---------- Header / Nav ---------- */
 .site-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 24px;max-width:1280px;margin:0 auto}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:1320px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:14px;flex:none}
 .brand .logo-img{height:58px;width:auto}
 .brand .logo-fallback{display:flex;align-items:center;gap:12px}
@@ -121,7 +121,7 @@ strong{color:var(--ink)}
 
 .menu{display:flex;align-items:center;gap:2px;list-style:none;margin:0;padding:0}
 .menu>li{position:relative}
-.menu>li>a{display:inline-flex;align-items:center;gap:6px;padding:12px 15px;font-weight:600;font-size:1rem;color:var(--ink);border-radius:8px}
+.menu>li>a{display:inline-flex;align-items:center;gap:5px;padding:11px 11px;font-weight:600;font-size:.97rem;color:var(--ink);border-radius:8px;white-space:nowrap}
 .menu>li>a:hover,.menu>li.is-active>a{color:var(--navy);background:var(--cream)}
 .menu>li.has-children>a::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}
 .submenu{position:absolute;top:calc(100% + 8px);left:0;min-width:248px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow-lg);padding:8px;list-style:none;margin:0;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .18s ease}
@@ -129,8 +129,8 @@ strong{color:var(--ink)}
 .menu>li.has-children:hover .submenu,.menu>li.has-children:focus-within .submenu{opacity:1;visibility:visible;transform:translateY(0)}
 .submenu a{display:block;padding:10px 14px;border-radius:8px;color:var(--body);font-weight:600;font-size:.98rem}
 .submenu a:hover{background:var(--cream);color:var(--navy)}
-.nav-cta{display:flex;align-items:center;gap:12px;flex:none}
-.nav-cta .btn{padding:12px 24px}
+.nav-cta{display:flex;align-items:center;gap:10px;flex:none}
+.nav-cta .btn{padding:11px 20px}
 
 /* Hamburger */
 .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:48px;height:44px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;flex:none}
@@ -320,8 +320,11 @@ strong{color:var(--ink)}
 .badge-soft{display:inline-block;background:var(--cream-2);color:var(--navy);font-weight:700;padding:6px 14px;border-radius:50px;font-size:.85rem}
 
 /* ---------- Responsive ---------- */
-@media (max-width:980px){
-  .menu,.nav-cta .btn-outline{display:none}
+@media (max-width:1320px){
+  .nav-cta .btn-outline{display:none}
+}
+@media (max-width:1080px){
+  .menu{display:none}
   .hamburger{display:flex}
   .nav-cta{gap:10px}
   .section{padding:64px 0}
