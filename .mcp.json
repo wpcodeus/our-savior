@@ -2,7 +2,7 @@
   "mcpServers": {
     "novamira-oursavior-wpcode": {
       "type": "http",
-      "url": "https://oursavior.wpcodeus.dev/index.php?rest_route=/mcp/novamira-oauth"
+      "url": "https://oursavior.wpcodeus.dev/wp-json/mcp/novamira-oauth"
     }
   }
 }
